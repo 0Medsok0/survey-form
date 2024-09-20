@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form-opros</title>
+  </head>
+  <body>
+    <form action="opros.php" method="post">
+      Full name (field text)<br />
+      <input type="text" name="fio" /><br />
+      Age (field text)<br />
+      <input type="text" name="age" /><br />
+      What kind of education do you have?<br />
+      <select name="еducation">
+        <option value="school">School</option>
+        <option value="medium_special">Medium special</option>
+        <option value="higher_education">Higher education</option></select
+      ><br />
+      What is your gender?<br />
+      <input type="checkbox" name="gender[]" value="man" />Man<br />
+      <input type="checkbox" name="gender[]" value="woman" />Woman<br />
+      What foreign languages do you know?<br />
+      <select name="foreign_languages[]" multiple>
+        <option value="french">French</option>
+        <option value="german">German</option>
+        <option value="italian">Italian</option></select
+      ><br />
+      <!-- Capcha -->
+      Сколько в нашей солнечной системе планет?<br />
+      <input type="text" name="capcha" /><br />
+      <input type="submit" value="Отправить">
+    </form>
+  </body>
+</html>
